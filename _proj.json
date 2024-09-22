@@ -1,0 +1,36 @@
+{
+  "title": "Code By MFM",
+  "update_version": "1.0",
+  "description": "HTML-CSS-JS Projects Lab on SPCK-io",
+  "main": "/index.html",
+  "author": {
+    "name": "Farhan Madni",
+    "GitHub": "https://github.com/MFM-347",
+    "CodePen": "https://codepen.io/MFM-347"
+  },
+  "cdn_modules": {
+    "bootstrap@5.3.3": [
+      "css/bootstrap.min.css",
+      "js/bootstrap.bundle.min.js"
+    ],
+    "font-awesome@6.6.0": [
+      "css/all.min.css",
+      "css/brand.min.css",
+      "css/fontawesome.min.css",
+      "css/regular.min.css",
+      "css/solid.min.css",
+      "css/svg-with-js.min.css",
+      "css/v4-font-face.min.css",
+      "css/v4-shims.min.css",
+      "css/v5-font-face.min.css",
+      "webfonts/fa-brands-400.ttf",
+      "webfonts/fa-brands-400.woff2",
+      "webfonts/fa-regular-400.ttf",
+      "webfonts/fa-regular-400.woff2",
+      "webfonts/fa-solid-900.ttf",
+      "webfonts/fa-solid-900.woff2",
+      "webfonts/fa-v4compatibility.ttf",
+      "webfonts/fa-v4compatibility.woff2"
+    ]
+  }
+}

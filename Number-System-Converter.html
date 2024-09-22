@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number System Converter</title>
+  <link rel="stylesheet" href="./cdn_modules/bootstrap@5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./cdn_modules/font-awesome@6.6.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      background-color: #f8f9fa;
+    }
+
+    .bgc {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group-text {
+      background-color: #e9ecef;
+    }
+
+    .card-header {
+      background-color: var(--bs-primary);
+      color: #fff;
+      text-align: center;
+      border-bottom: none;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .fa-copy {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .fade-out {
+      animation: fadeOut 2s forwards;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .tooltip-inner {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+    .tooltip.bs-tooltip-bottom .arrow::before {
+      border-bottom-color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bgc px-4">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="fw-bold">Number System Converter</h3>
+      </div>
+      <div class="card-body p-4">
+        <div class="input-group mb-4">
+          <span class="input-group-text">Number</span>
+          <input type="text" class="form-control" value="25" id="num" placeholder="Enter number">
+        </div>
+        <div class="input-group mb-4">
+          <span class="input-group-text">Base</span>
+          <input type="number" class="form-control" value="2" id="base" placeholder="Enter base (2-16)" min="2" max="16">
+        </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary" onclick="cnv()">Convert</button>
+          <button class="btn btn-outline-secondary" id="cnvn">
+            <span id="result-text">Result</span>
+            <i class="fas fa-copy" id="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copied"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let copyIcon = document.getElementById('copyIcon');
+      let tooltip = new bootstrap.Tooltip(copyIcon);
+      let resultText = document.getElementById('result-text');
+      let cnvn = document.getElementById('cnvn');
+      cnv();
+      cnvn.onclick = function() {
+        navigator.clipboard.writeText(resultText.innerText).then(function() {
+          tooltip.show();
+          setTimeout(() => tooltip.hide(), 1500);
+        }).catch(function(err) {
+          console.error("Copy failed:", err);
+        });
+      };
+    });
+
+    function cnv() {
+      let num = parseInt(document.getElementById('num').value, 10);
+      let base = parseInt(document.getElementById('base').value, 10);
+      document.getElementById('result-text').innerText = num.toString(base);
+    }
+  </script>
+  <script type="text/javascript" src="cdn_modules/bootstrap@5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
