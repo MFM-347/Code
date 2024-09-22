@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Code By MFM</title>
-  <link rel="stylesheet" href="./cdn_modules/bootstrap@5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -62,7 +62,7 @@
   </div>
 
   <script>
-    fetch('./assets/projects.json')
+    fetch('/public/projects.json')
       .then(response => response.json())
       .then(data => {
         const projectsContainer = document.getElementById('projects-container');

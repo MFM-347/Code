@@ -6,13 +6,13 @@ All my HTML/CSS/JS Code on CodePen. I will update this Repo almost on next weeke
 
 A simple, responsive login page with a clean design, featuring a username and password form, styled with CSS.
 
-[![screenshot](./assets/Screenshot1.png)](#).
+[<img src="./public/Screenshot1.png" width="150px">](/public/Screenshot1.png)
 
 ### Number System Converter
 
 Simple Number System Converter for converting decimal numbers to binary, octal, and hexadecimal bases. Convert and copy results with ease.
 
-[![screenshot](./assets/Screenshot2.png)](#)
+[<img src="./public/Screenshot2.png" width="150px">](/public/Screenshot2.png)
 
 ## Credits
 Created by [@MFM](https://github.com/MFM-347)
