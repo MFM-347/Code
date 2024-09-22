@@ -1,14 +1,18 @@
 # Code by MFM
-My HTML-CSS-JS Project Lab on [SPCK](https://spck.io/). I will update this Lab almost on next weekend
+All my HTML/CSS/JS Code on CodePen. I will update this Repo almost on next weekend
 
 ## Code Details
-#### Login-Form
+### Login-Form
 
-A simple, responsive login page with a clean design, featuring a username and password form, styled with CSS. It is Cloned from an image posted on [Facebook](https://www.facebook.com/groups/340398917711992/permalink/1083432650075278/).
+A simple, responsive login page with a clean design, featuring a username and password form, styled with CSS.
 
-#### Number System Converter
+[![screenshot](./assets/Screenshot1.png)](#).
+
+### Number System Converter
 
 Simple Number System Converter for converting decimal numbers to binary, octal, and hexadecimal bases. Convert and copy results with ease.
+
+[![screenshot](./assets/Screenshot2.png)](#)
 
 ## Credits
 Created by [@MFM](https://github.com/MFM-347)
