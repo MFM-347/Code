@@ -1,106 +1,117 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code By MFM</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #eef2f7;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Code By MFM</title>
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #eef2f7;
-      font-family: 'Poppins', sans-serif;
-      height: 100vh;
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
+      h1 {
+        color: #333;
+      }
 
-    h1 {
-      color: #333;
-    }
+      .bgc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 1.25rem 0.75rem;
+      }
 
-    .bgc {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      padding: 1.25rem 0.75rem;
-    }
+      .card {
+        background: #ffffff;
+        width: 95%;
+        border: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
 
-    .card {
-      background: #ffffff;
-      width: 95%;
-      border: none;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      transition: all 0.3s ease;
-    }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    }
+      .card-title {
+        font-weight: 600;
+        color: #333;
+      }
 
-    .card-title {
-      font-weight: 600;
-      color: #333;
-    }
+      .card-text {
+        font-weight: 300;
+        color: #666;
+      }
 
-    .card-text {
-      font-weight: 300;
-      color: #666;
-    }
-  </style>
-</head>
+      .btn-outline-primary {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
 
-<body>
-  <h1 class="text-center display-5 fw-semibold my-3">Code By MFM</h1>
-  <div class="bgc row" id="projects-container">
-  </div>
+  <body>
+    <h1 class="text-center display-5 fw-semibold my-3">Code By MFM</h1>
+    <div class="bgc row" id="projects-container"></div>
 
-  <script>
-    fetch('/public/projects.json')
-      .then(response => response.json())
-      .then(data => {
-        const projectsContainer = document.getElementById('projects-container');
+    <script>
+      fetch("/projects.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const projectsContainer =
+            document.getElementById("projects-container");
+          data.forEach((project) => {
+            const colDiv = document.createElement("div");
+            colDiv.className = "col-md-4 mb-4";
 
-        data.forEach(project => {
-          const colDiv = document.createElement('div');
-          colDiv.className = 'col-md-4 mb-4';
+            const cardDiv = document.createElement("div");
+            cardDiv.className = "card p-3 h-100";
 
-          const cardDiv = document.createElement('div');
-          cardDiv.className = 'card p-3 h-100';
+            const cardBody = document.createElement("div");
+            cardBody.className = "card-body";
 
-          const cardBody = document.createElement('div');
-          cardBody.className = 'card-body';
+            const cardTitle = document.createElement("h5");
+            cardTitle.className = "card-title";
+            cardTitle.textContent = project.title;
 
-          const cardTitle = document.createElement('h5');
-          cardTitle.className = 'card-title';
-          cardTitle.textContent = project.title;
+            const cardText = document.createElement("p");
+            cardText.className = "card-text";
+            cardText.textContent = project.description;
 
-          const cardText = document.createElement('p');
-          cardText.className = 'card-text';
-          cardText.textContent = project.description;
+            const cardLink = document.createElement("a");
+            cardLink.className = "btn btn-outline-primary";
+            cardLink.href = project.link;
+            cardLink.textContent = "Visit";
 
-          const cardLink = document.createElement('a');
-          cardLink.className = 'btn btn-outline-primary';
-          cardLink.href = project.link;
-          cardLink.textContent = 'Visit';
-
-          cardBody.appendChild(cardTitle);
-          cardBody.appendChild(cardText);
-          cardBody.appendChild(cardLink);
-
-          cardDiv.appendChild(cardBody);
-          colDiv.appendChild(cardDiv);
-          projectsContainer.appendChild(colDiv);
+            cardBody.appendChild(cardTitle);
+            cardBody.appendChild(cardText);
+            cardBody.appendChild(cardLink);
+            cardDiv.appendChild(cardBody);
+            colDiv.appendChild(cardDiv);
+            projectsContainer.appendChild(colDiv);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading the project details:", error);
+          const errorMessage = document.createElement("p");
+          errorMessage.textContent =
+            "Failed to load project details. Please try again later.";
+          document
+            .getElementById("projects-container")
+            .appendChild(errorMessage);
         });
-      })
-      .catch(error => console.error('Error loading the project details:', error));
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

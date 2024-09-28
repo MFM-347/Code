@@ -1,12 +1,72 @@
 [
   {
+    "title": "Color Picker",
+    "description": "Select colors effortlessly with this intuitive and powerful color picking tool. Ideal for web developers and designers seeking precision and ease of use.",
+    "link": "/pages/color-picker.html"
+  },
+  {
+    "title": "Cool Text Shadows",
+    "description": "Eye-catching text shadows with creative designs like layered, neon, and reflective effects. Ideal for web developers to enhance typography.",
+    "link": "/pages/text-shadows.html"
+  },
+  {
+    "title": "Loader-Ani",
+    "description": "Enhance user experience with sleek CSS3 loaders and your website's visual appeal with our CSS3 loader animations.",
+    "link": "/pages/loader-ani.html"
+  },
+  {
+    "title": "Color Picker",
+    "description": "Discover Spectrum, the versatile and user-friendly color picker tool that allows you to easily select colors for your web projects.",
+    "link": "/pages/color_picker.html"
+  },
+  {
+    "title": "Footer Component",
+    "description": "Mobile-friendly Bootstrap footer with customizable links and social media icons, improving website navigation and user experience.",
+    "link": "/pages/footer-component.html"
+  },
+  {
+    "title": "CSS3 CheckBox",
+    "description": "CSS3 animated glowing checkbox with SVG icon, featuring smooth transitions, keyframe animations, and modern design for interactive UI.",
+    "link": "/pages/css3-checkbox.html"
+  },
+  {
+    "title": "CSS3 Animated Card",
+    "description": "This is a 3D card flip animation using CSS3. Hover over the card to see the flip effect and the gradient change on the glowing background.",
+    "link": "/pages/css3-card.html"
+  },
+  {
+    "title": "Digital Clock",
+    "description": "Digital clock with real-time display using HTML, CSS, and JavaScript. Responsive design, modern font, and dark theme styling.",
+    "link": "/pages/digital-clock.html"
+  },
+  {
+    "title": "ColorPicker",
+    "description": "Interactive Color Picker – Easily adjust RGB values with sliders and inputs to customize and preview colors. Perfect for designers and developers.",
+    "link": "/pages/colorpicker.html"
+  },
+  {
+    "title": "BG Template",
+    "description": "Visually striking CSS background with a dynamic grid pattern and diagonal mask effect for a modern, engaging look.",
+    "link": "/pages/bg-template.html"
+  },
+  {
     "title": "Login Form",
     "description": "A simple, responsive login page with a clean design, featuring a username and password form, styled with CSS.",
-    "link": "/pages/Login-Form.html"
+    "link": "/pages/login.html"
   },
   {
     "title": "Number System Converter",
-    "description": "Simple Number System Converter for converting decimal numbers to binary, octal, and hexadecimal bases. Convert and copy results with ease.",
-    "link": "/pages/Number-System-Converter.html"
+    "description": "Simple Number System Converter for converting decimal numbers to binary, octal, and hexadecimal bases.",
+    "link": "/pages/num-sys-cnv.html"
+  },
+  {
+    "title": "CC: Color Converter",
+    "description": "Convert colors easily with this Color Converter tool! Input HEX, RGB, HSL, or pick a color for instant format conversion.",
+    "link": "/pages/color-cnv.html"
+  },
+  {
+    "title": "TODO List",
+    "description": "Create and manage tasks easily with this responsive Bootstrap-powered to-do list app featuring a clean, interactive user interface.",
+    "link": "/pages/todo-list.html"
   }
 ]

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loader-Ani</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .bgc {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ac {
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+      }
+      .linec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+      #hline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #vline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+      .hline {
+        background-color: #ff0;
+        margin: 10px;
+        height: 7.5px;
+        width: 100px;
+        animation-name: ani1;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+      }
+      .vline {
+        background-color: #ff0;
+        margin: 10px;
+        width: 7.5px;
+        height: 100px;
+        animation-name: ani2;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes ani1 {
+        0% {
+          width: 100px;
+        }
+        25% {
+          width: 50px;
+        }
+        50% {
+          width: 100px;
+        }
+        75% {
+          width: 50px;
+        }
+        100% {
+          width: 100px;
+        }
+      }
+      @keyframes ani2 {
+        0% {
+          height: 100px;
+        }
+        25% {
+          height: 50px;
+        }
+        50% {
+          height: 100px;
+        }
+        75% {
+          height: 50px;
+        }
+        100% {
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgc ac" data-bs-theme="dark">
+      <div
+        class="container mt-3 d-flex justify-content-center align-items-center"
+      >
+        <div id="hline" class="linec"></div>
+        <div id="vline" class="linec"></div>
+      </div>
+    </div>
+    <script>
+      let c1 = document.getElementById("hline"),
+        c2 = document.getElementById("vline");
+
+      for (let x = 0; x < 3; x++) {
+        let line = document.createElement("div");
+        line.className = "hline";
+        line.style.animationDelay = `${2 * x}s`;
+        c1.appendChild(line);
+      }
+      for (let y = 0; y < 3; y++) {
+        let line = document.createElement("div");
+        line.className = "vline";
+        line.style.animationDelay = `${2 * y}s`;
+        c2.appendChild(line);
+      }
+    </script>
+  </body>
+</html>

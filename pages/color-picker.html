@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://raw.githack.com/easylogic/colorpicker/main/dist/EasyLogicColorPicker.css"
+    />
+    <style>
+      .bgc {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: scroll;
+      }
+      .ac {
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgc ac" data-bs-theme="dark">
+      <div
+        class="container mt-3 d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="display-5 fw-bold">Color Picker</h1>
+        <div id="picker"></div>
+      </div>
+    </div>
+    <script src="https://raw.githack.com/easylogic/colorpicker/main/dist/EasyLogicColorPicker.js"></script>
+    <script>
+      const picker = new EasyLogicColorPicker({
+        container: document.getElementById("picker"),
+        type: "default",
+        color: "#1ea54c",
+        swatchColors: [
+          "#F44336",
+          "#E91E63",
+          "#9C27B0",
+          "#673AB7",
+          "#3F51B5",
+          "#2196F3",
+          "#03A9F4",
+          "#00BCD4",
+          "#009688",
+          "#4CAF50",
+          "#8BC34A",
+          "#CDDC39",
+          "#FFEB3B",
+          "#FFC107",
+          "#FF9800",
+          "#FF5722",
+          "#795548",
+          "#9E9E9E",
+          "#607D8B",
+        ],
+      });
+    </script>
+  </body>
+</html>

@@ -1,18 +1,33 @@
 {
   "title": "Code By MFM",
-  "update_version": "1.0",
-  "description": "All my HTML-CSS-JS Code on CodePen",
+  "update_version": "1.1",
+  "description": "All my HTML-CSS-JS Code present on CodePen.",
   "main": "/index.html",
   "author": {
     "name": "Farhan Madni",
     "GitHub": "https://github.com/MFM-347",
     "CodePen": "https://codepen.io/MFM-347"
   },
-  "cdn": {
-    "cdn_name":"unpkg",
-    "libs": [
-      "bootstrap@5.3.3",
-      "font-awesome@6.6.0"
-    ]
-  }
+  "cdn": [
+    {
+      "cdn_name": "unpkg",
+      "type": "lib",
+      "libs": ["bootstrap", "fontawesome-free", "jquery", "tinycolor2"]
+    },
+    {
+      "cdn_name": "cdnjs",
+      "type": "lib",
+      "libs": ["spectrum"]
+    },
+    {
+      "cdn_name": "githack",
+      "type": "lib",
+      "libs": ["easylogiccolorpicker"]
+    },
+    {
+      "cdn_name": "google_fonts",
+      "type": "font_family",
+      "font": ["Rubik", "Playfair Display", "Play"]
+    }
+  ]
 }

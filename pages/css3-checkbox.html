@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS3 CheckBox</title>
+    <link rel="stylesheet" href="/base.css" />
+    <style>
+      body {
+        background-color: #212529;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .cc {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .cc input[type="checkbox"] {
+        display: none;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px;
+        background-color: #00d;
+        outline: 0.1625rem solid #dd0;
+        box-shadow:
+          0 0 20px #dd0,
+          0 0 30px #dd0,
+          0 0 40px #00d;
+        border-radius: 50%;
+        transition:
+          background-color 0.3s ease-out,
+          outline-color 0.3s ease-in,
+          box-shadow 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon {
+        height: 48px;
+        width: 48px;
+        opacity: 0;
+        transition:
+          opacity 0.3s ease-in,
+          transform 0.3s ease-out;
+        transform: scale(0.625);
+      }
+
+      input:checked + .checkmark {
+        background-color: #dd0;
+        outline: 0.125rem solid #00d;
+        box-shadow:
+          0 0 20px #00d,
+          0 0 30px #00d,
+          0 0 40px #00d;
+        animation: ani 1.5s infinite alternate;
+      }
+
+      input:checked + .checkmark .icon {
+        fill: #00d;
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      @keyframes ani {
+        0% {
+          box-shadow:
+            0 0 10px #00d,
+            0 0 20px #00d,
+            0 0 30px #00d;
+        }
+        100% {
+          box-shadow:
+            0 0 20px #00d,
+            0 0 30px #00d,
+            0 0 40px #00d;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <label class="cc">
+      <input type="checkbox" checked />
+      <span class="checkmark">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 512"
+        >
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+          />
+        </svg>
+      </span>
+    </label>
+  </body>
+</html>

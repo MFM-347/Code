@@ -6,8 +6,8 @@
 2. **Seamless Deployment**  
    The project will soon be deployed on **GitHub Pages** or **Vercel**.
 
-3. **Code Integration**  
-   All additional html/css/js projects and codes by [@MFM-347](https://github.com/MFM-347/) will be integrated into this repository. Stay tuned for more innovative examples and experiments.
+3. **Vite Integration**  
+   Vite will be soon integrated as Dev-Server & Building-Tool.
 
 4. **More Exciting Updates**  
    Expect many new features and improvements in future iterations, pushing the boundaries of creativity and development.
