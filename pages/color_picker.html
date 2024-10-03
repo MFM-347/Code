@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Color Picker</title>
-    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/public/base.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css"
@@ -35,77 +35,11 @@
       >
         <h1 class="display-5 fw-bold">Color Picker</h1>
         <input type="text" id="color" />
-        <footer class="footer fixed-bottom bg-body-tertiary">
-          <div class="row">
-            <div
-              class="col-md-6 d-flex justify-content-center align-items-center flex-column"
-            >
-              <h4>
-                Created by
-                <a
-                  href="https://codepen.io/MFM-347"
-                  class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  >@MFM-347</a
-                >
-              </h4>
-              <ul class="mt-2 list-unstyled">
-                <li class="my-2">
-                  <a
-                    href="https://codepen.io/MFM-347"
-                    class="link-light link-underline-secondary"
-                    ><i class="fab fa-codepen"></i>&nbsp;CodePen</a
-                  >
-                </li>
-                <li class="my-2">
-                  <a
-                    href="https://github.com/MFM-347"
-                    class="link-light link-underline-light"
-                    ><i class="fab fa-github"></i>&nbsp;GitHub</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div
-              class="col-md-6 d-flex justify-content-center align-items-center flex-column"
-            >
-              <h5>Powered By</h5>
-              <ul class="mt-2 list-unstyled">
-                <li>
-                  <a
-                    href="https://github.com/jquery/jquery"
-                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                    >Jquery</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/twbs/bootstrap"
-                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                    >BootStrap</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/bgrins/spectrum"
-                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                    >Spectrum</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
     <script>
-      function updateBorders(color) {
-        document.body.style.borderColor = color
-          ? color.toHexString()
-          : "transparent";
-      }
-
       $(document).ready(function () {
         $("#color").spectrum({
           flat: true,
@@ -193,9 +127,6 @@
               "rgb(76, 17, 48)",
             ],
           ],
-          change: function (color) {
-            updateBorders(color);
-          },
         });
       });
     </script>

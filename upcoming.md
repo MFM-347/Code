@@ -6,8 +6,5 @@
 2. **Seamless Deployment**  
    The project will soon be deployed on **GitHub Pages** or **Vercel**.
 
-3. **Vite Integration**  
-   Vite will be soon integrated as Dev-Server & Building-Tool.
-
-4. **More Exciting Updates**  
+3. **More Exciting Updates**  
    Expect many new features and improvements in future iterations, pushing the boundaries of creativity and development.

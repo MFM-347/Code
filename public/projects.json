@@ -1,6 +1,6 @@
 [
   {
-    "title": "Color Picker",
+    "title": "CP: Color Picker",
     "description": "Select colors effortlessly with this intuitive and powerful color picking tool. Ideal for web developers and designers seeking precision and ease of use.",
     "link": "/pages/color-picker.html"
   },
@@ -68,5 +68,20 @@
     "title": "TODO List",
     "description": "Create and manage tasks easily with this responsive Bootstrap-powered to-do list app featuring a clean, interactive user interface.",
     "link": "/pages/todo-list.html"
+  },
+  {
+    "title": "CountDown Timer",
+    "description": "A responsive countdown timer built with Bootstrap, featuring customizable time inputs for hours, minutes, and seconds with a reset function.",
+    "link": "/pages/countdown-timer.html"
+  },
+  {
+    "title": "Stop Watch",
+    "description": "Responsive stopwatch built with Bootstrap. Track time with Start, Stop, and Reset buttons. Clean UI, real-time precision.",
+    "link": "/pages/stop-watch.html"
+  },
+  {
+    "title": "Analog Clock",
+    "description": "Elegant clock design with animated hands, set against a gradient background, featuring responsive layout and smooth real-time updates.",
+    "link": "/pages/analog-clock.html"
   }
 ]

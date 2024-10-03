@@ -1,6 +1,6 @@
 {
   "title": "Code By MFM",
-  "update_version": "1.1",
+  "update_version": "1.2",
   "description": "All my HTML-CSS-JS Code present on CodePen.",
   "main": "/index.html",
   "author": {
@@ -28,6 +28,11 @@
       "cdn_name": "google_fonts",
       "type": "font_family",
       "font": ["Rubik", "Playfair Display", "Play"]
+    },
+    {
+      "cdn_name": "cdnfonts",
+      "type": "font_family",
+      "font": ["Digital-7 Mono"]
     }
   ]
 }
