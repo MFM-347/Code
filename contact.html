@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me - Code By MFM</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+      body {
+        background: cyan
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+      }
+      h1, h2 {
+        color:#333 black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 1rem;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+      }
+      .form-control {
+        border-radius: 0.5rem;
+        border: 2px solid #ddd;
+        padding: 10px;
+      }
+      .form-control:focus {
+        border-color: #fda085;
+        box-shadow: none;
+      }
+      .btn-submit {
+        background-color: #f6d365;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 1rem;
+        transition: background-color 0.3s;
+      }
+      .btn-submit:hover {
+        background-color: lightblue;
+      }
+      .contact-info {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #555;
+      }
+      .contact-info strong {
+        color: #333;
+      }
+      .list-unstyled li a {
+        text-decoration: none;
+        color: lightblue;
+        transition: color 0.3s;
+      }
+      .list-unstyled li a:hover {
+        color: #fda085;
+      }
+      .map {
+        margin-top: 20px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .map iframe {
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">Contact Me</h1>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Get in Touch</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Contact Information</h2>
+          <div class="contact-info">
+            <p><strong>Address:</strong> 123 Code Street, City, Country</p>
+            <p><strong>Email:</strong> support@example.com</p>
+            <p><strong>Phone:</strong> +123-456-7890</p>
+            <p><strong>Social Media:</strong></p>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center mt-4">Our Location</h2>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.345230126717!2d-122.4194153846816!3d37.77492927975933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c73c3e9e1%3A0x19a1aa39ee18c5db!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1638292024276!5m2!1sen!2sus" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
