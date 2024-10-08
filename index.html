@@ -1,165 +1,227 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Code By MFM</title>
     <link rel="stylesheet" href="./public/base.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css"
+    />
     <style>
-        body {
-            background-color: #eef2f7;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        .navbar {
-          background-color: #343a40;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      body {
+        background-color: #eef2f7;
       }
-    
+
+      h1 {
+        color: #333;
+      }
+
+      .navbar {
+        background-color: #1c1b22;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
       .navbar-nav .nav-link {
-          color: #ffffff;
-          font-weight: 500;
+        color: #f0f0f6;
+        font-weight: 500;
       }
-    
+
       .navbar-nav .nav-link:hover {
-          color: #ffc107;
-          text-decoration: underline;
+        color: #07c1ff;
+        text-decoration: underline;
       }
-    
+
       .navbar-brand {
-          font-size: 1.5rem;
-          color: #ffc107;
+        font-size: 1.5rem;
+        color: #07c1ff;
       }
-    
+      .navbar-brand:hover {
+        color: #e0e0e6;
+      }
       .navbar-toggler {
-          background-color: #ffc107;
-      }
-    
-      .navbar-toggler-icon {
-          background-image: url("data:image/svg+xml;...");
+        background-color: #07c1ff;
       }
 
-        .bgc {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 0;
-            padding: 1.25rem 0.75rem;
-        }
+      .bgc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 1.25rem 0.75rem;
+      }
 
-        .card {
-            background: #ffffff;
-            width: 95%;
-            border: none;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            transition: all 0.3s ease;
-        }
+      .card {
+        background: #f0f0f6;
+        width: 95%;
+        border: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-        }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
 
-        .card-title {
-            font-weight: 600;
-            color: #333;
-        }
+      .card-title {
+        font-weight: 600;
+        color: #333;
+      }
 
-        .card-text {
-            font-weight: 300;
-            color: #666;
-        }
+      .card-text {
+        font-weight: 300;
+        color: #666;
+      }
 
-        .btn-outline-primary {
-            margin-top: 10px;
-        }
+      .btn-outline-primary {
+        margin-top: 10px;
+      }
+
+      .footer {
+        background-color: #ced2d7;
+        padding: 1.7375rem 1.4375rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Code By MFM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">Code By MFM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects-container">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-
     <h1 class="text-center display-5 fw-semibold my-3">Code By MFM</h1>
     <div class="bgc row" id="projects-container"></div>
-
+    <footer class="footer">
+      <div class="row">
+        <div
+          class="col-md-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h4>
+            Created by
+            <a
+              href="https://codepen.io/MFM-347"
+              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >@MFM-347</a
+            >
+          </h4>
+          <ul class="mt-2 list-unstyled">
+            <li class="my-2">
+              <a
+                href="https://codepen.io/MFM-347"
+                class="link-dark link-underline-secondary"
+                ><i class="fab fa-codepen"></i>&nbsp;CodePen</a
+              >
+            </li>
+            <li class="my-2">
+              <a
+                href="https://github.com/MFM-347"
+                class="link-dark link-underline-dark"
+                ><i class="fab fa-github"></i>&nbsp;GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-md-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h5>Powered By</h5>
+          <ul class="mt-2 list-unstyled">
+            <li>
+              <a
+                href="https://github.com/twbs/bootstrap"
+                class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                >BootStrap</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script>
-        fetch("./public/projects.json")
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
-                return response.json();
-            })
-            .then((data) => {
-                const projectsContainer = document.getElementById("projects-container");
-                data.forEach((project) => {
-                    const colDiv = document.createElement("div");
-                    colDiv.className = "col-md-4 mb-4";
+      fetch("./public/projects.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const projectsContainer =
+            document.getElementById("projects-container");
+          data.forEach((project) => {
+            const colDiv = document.createElement("div");
+            colDiv.className = "col-md-4 mb-4";
 
-                    const cardDiv = document.createElement("div");
-                    cardDiv.className = "card p-3 h-100";
+            const cardDiv = document.createElement("div");
+            cardDiv.className = "card p-3 h-100";
 
-                    const cardBody = document.createElement("div");
-                    cardBody.className = "card-body";
+            const cardBody = document.createElement("div");
+            cardBody.className = "card-body";
 
-                    const cardTitle = document.createElement("h5");
-                    cardTitle.className = "card-title";
-                    cardTitle.textContent = project.title;
+            const cardTitle = document.createElement("h5");
+            cardTitle.className = "card-title";
+            cardTitle.textContent = project.title;
 
-                    const cardText = document.createElement("p");
-                    cardText.className = "card-text";
-                    cardText.textContent = project.description;
+            const cardText = document.createElement("p");
+            cardText.className = "card-text";
+            cardText.textContent = project.description;
 
-                    const cardLink = document.createElement("a");
-                    cardLink.className = "btn btn-outline-primary";
-                    cardLink.href = project.link;
-                    cardLink.textContent = "Visit";
+            const cardLink = document.createElement("a");
+            cardLink.className = "btn btn-outline-primary";
+            cardLink.href = project.link;
+            cardLink.textContent = "Visit";
 
-                    cardBody.appendChild(cardTitle);
-                    cardBody.appendChild(cardText);
-                    cardBody.appendChild(cardLink);
-                    cardDiv.appendChild(cardBody);
-                    colDiv.appendChild(cardDiv);
-                    projectsContainer.appendChild(colDiv);
-                });
-            })
-            .catch((error) => {
-                console.error("Error loading the project details:", error);
-                const errorMessage = document.createElement("p");
-                errorMessage.textContent = "Failed to load project details. Please try again later.";
-                document.getElementById("projects-container").appendChild(errorMessage);
-            });
+            cardBody.appendChild(cardTitle);
+            cardBody.appendChild(cardText);
+            cardBody.appendChild(cardLink);
+            cardDiv.appendChild(cardBody);
+            colDiv.appendChild(cardDiv);
+            projectsContainer.appendChild(colDiv);
+          });
+        })
+        .catch((error) => {
+          console.error("Error loading the project details:", error);
+          const errorMessage = document.createElement("p");
+          errorMessage.textContent =
+            "Failed to load project details. Please try again later.";
+          document
+            .getElementById("projects-container")
+            .appendChild(errorMessage);
+        });
     </script>
     <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
