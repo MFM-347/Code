@@ -11,15 +11,6 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
-      .bgc {
-        height: 100vh;
-        width: 100vw;
-        overflow-x: scroll;
-      }
-      .ac {
-        background-color: var(--bs-body-bg);
-        color: var(--bs-body-color);
-      }
       .clock {
         width: auto;
         font-size: 2rem;
@@ -36,18 +27,14 @@
     </style>
   </head>
   <body>
-    <div class="bgc ac" data-bs-theme="dark">
-      <div
-        class="container mt-3 d-flex justify-content-center align-items-center flex-column"
-      >
-        <h1 class="display-5 fw-bold">Digital Clock</h1>
-        <div class="row rounded clock bg-primary">
-          <div class="col-4 tc" id="hrs"></div>
-          :
-          <div class="col-4 tc" id="mins"></div>
-          :
-          <div class="col-4 tc" id="secs"></div>
-        </div>
+    <div class="bgc dark center-col">
+      <h1 class="title">Digital Clock</h1>
+      <div class="row rounded clock bg-primary">
+        <div class="col-4 tc" id="hrs"></div>
+        :
+        <div class="col-4 tc" id="mins"></div>
+        :
+        <div class="col-4 tc" id="secs"></div>
       </div>
     </div>
     <script>

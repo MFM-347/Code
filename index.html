@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/xml+svg" sizes="any" href="./public/icon.svg">
     <title>Code By MFM</title>
     <link rel="stylesheet" href="./public/base.css" />
     <link
@@ -10,10 +11,6 @@
       href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
     />
     <style>
-      body {
-        background-color: #eef2f7;
-      }
-
       h1 {
         color: #333;
       }
@@ -29,22 +26,22 @@
       }
 
       .navbar-nav .nav-link:hover {
-        color: #07c1ff;
+        color: #3fcfff;
         text-decoration: underline;
       }
 
       .navbar-brand {
         font-size: 1.5rem;
-        color: #07c1ff;
+        color: #3fcfff;
       }
       .navbar-brand:hover {
         color: #e0e0e6;
       }
       .navbar-toggler {
-        background-color: #07c1ff;
+        background-color: #3fcfff;
       }
 
-      .bgc {
+      .con {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +51,7 @@
       }
 
       .card {
-        background: #f0f0f6;
+        background: #fff;
         width: 95%;
         border: none;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -84,37 +81,41 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="/">Code By MFM</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects-container">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-          </ul>
+    <div class="bgc">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="/">Code By MFM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects-container">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://codepen.io/MFM-347"
+                  >Codepen</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <h1 class="text-center display-5 fw-semibold my-3">Code By MFM</h1>
-    <div class="bgc row" id="projects-container"></div>
+      </nav>
+      <h1 class="text-center display-5 fw-semibold my-3">Code By MFM</h1>
+      <div class="con row" id="projects-container"></div>
+    </div>
     <script>
       fetch("./public/projects.json")
         .then((response) => {

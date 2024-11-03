@@ -1,10 +1,11 @@
-# 🎉 Welcome to the Project!
+# Welcome to the Project
 
-Hey there, and welcome! 🙌 First off, thank you for taking the time to contribute – it's amazing to have you here! By contributing to this repository, you're helping showcase the code I ([@MFM-347](https://codepen.io/MFM-347)) have created using HTML, CSS, and JavaScript. 
+Hello, and welcome! First off, thank you for taking the time to contribute – it’s great to have you here. By contributing to this repository, you're helping showcase the code I've created using HTML, CSS, and JavaScript.
 
-Before you dive in, please take a moment to read through these guidelines to ensure a smooth and collaborative experience for everyone. 😊
+Before you dive in, please take a moment to read through these guidelines to ensure a smooth and collaborative experience for everyone.
 
-## 📜 Table of Contents
+## Table of Contents
+
 1. [Getting Started](#getting-started)
 2. [Code of Conduct](#code-of-conduct)
 3. [What You Can Contribute](#what-you-can-contribute)
@@ -14,7 +15,7 @@ Before you dive in, please take a moment to read through these guidelines to ens
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 1. **Fork the repo**: Make sure to fork this repository to your own GitHub account.
 2. **Clone the repo**: Clone your forked version to your local machine using:
@@ -29,9 +30,9 @@ Before you dive in, please take a moment to read through these guidelines to ens
 
 ---
 
-## 🌟 Code of Conduct
+## Code of Conduct
 
-We are committed to making this repository a safe, welcoming space for everyone. Please respect other contributors, keep communication kind, and maintain a constructive attitude. 🤝
+We are committed to making this repository a safe, welcoming space for everyone. Please respect other contributors, keep communication kind, and maintain a constructive attitude.
 
 For more details, check out our [Code of Conduct](CODE_OF_CONDUCT.md) document.
 
@@ -39,38 +40,40 @@ For more details, check out our [Code of Conduct](CODE_OF_CONDUCT.md) document.
 
 ## What You Cannot Modify
 
-🚨 **Important Note!** 🚨
+**Important Note!**
 
-This repository was created to showcase the code found inside the `pages` directory. The files and code within that directory should **NOT** be modified by anyone other than the repository owner, me ([@MFM-347](https://codepen.io/MFM-347)).
+This repository was created to showcase the code found inside the `pages` directory. The files and code within that directory should **not** be modified by anyone other than the repository owner, me ([@MFM-347](https://codepen.io/MFM-347)).
 
-### ❌ Restricted Directory:
+### Restricted Directory:
+
 - `pages/`
 
-This means no changes to any files in `pages/` are allowed in your contributions. Feel free to explore, but please respect the integrity of this section! 😇
+This means no changes to any files in `pages/` are allowed in your contributions. Feel free to explore, but please respect the integrity of this section.
 
 ---
 
-## ✅ What You Can Contribute
+## What You Can Contribute
 
-Here’s where **you** come in! 🎉
+Here’s where **you** come in.
 
 You are free to modify or add any code **outside** the `pages/` directory, such as:
+
 - Enhancements or refactoring to styles or scripts located in other directories.
 - Adding new features that don’t interfere with the `pages/` directory content.
-- Improving documentation (like this one! 😎).
+- Improving documentation (like this one).
 - Bug fixes, optimizations, or general improvements.
 
 Your contributions should make the project better while keeping the integrity of the showcased code inside the `pages/` directory intact.
 
 ---
 
-## 📥 How to Submit Changes
+## How to Submit Changes
 
 Once you've made your changes:
 
 1. **Commit your changes**: Write meaningful commit messages that clearly describe what you've changed.
    ```bash
-   git commit -m "Added cool new feature"
+   git commit -m "Added new feature"
    ```
 2. **Push to your fork**:
    ```bash
@@ -81,17 +84,17 @@ Once you've made your changes:
    - Reference any related issues or features.
    - Follow the template, if one exists.
 
-We'll review your PR as soon as possible!
+We'll review your PR as soon as possible.
 
 ---
 
-## ❓ Questions?
+## Questions?
 
-If you have any questions, feel free to [open an issue](https://github.com/your-repo/issues) or contact me directly at ([@MFM-347](https://github.com/MFM-347)).
+If you have any questions, feel free to [open an issue](https://github.com/your-repo/issues) or contact me directly ([@MFM-347](https://github.com/MFM-347)).
 
-Thanks again for contributing – you're awesome! ✨
+Thanks again for contributing!
 
 ---
 
-Happy coding! 💻  
+Happy coding,  
 **[@MFM-347](https://github.com/MFM-347)**

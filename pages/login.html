@@ -8,14 +8,6 @@
     <style>
       body {
         font-family: monospace !important;
-        background-color: #f1f1f1;
-        padding: 0;
-        margin: 0;
-        height: 100vh;
-        width: 100vw;
-        display: grid;
-        place-items: center;
-        overflow-x: hidden;
       }
       .container {
         background-color: #fff;
@@ -91,20 +83,22 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <h1><span class="l">L</span>OGIN</h1>
-      </div>
-      <form>
-        <label for="uname">Username</label>
-        <input type="text" class="inp" name="uname" required />
-        <label for="psw">Password</label>
-        <input type="password" class="inp" name="psw" required />
-        <button type="submit">Enter</button>
-      </form>
-      <div class="signup">
-        <b>Don't have account?</b>
-        <a href="#">Sign up</a>
+    <div class="bgc center">
+      <div class="container">
+        <div class="header">
+          <h1><span class="l">L</span>OGIN</h1>
+        </div>
+        <form>
+          <label for="uname">Username</label>
+          <input type="text" class="inp" name="uname" required />
+          <label for="psw">Password</label>
+          <input type="password" class="inp" name="psw" required />
+          <button type="submit">Enter</button>
+        </form>
+        <div class="signup">
+          <b>Don't have account?</b>
+          <a href="#">Sign up</a>
+        </div>
       </div>
     </div>
   </body>

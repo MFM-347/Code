@@ -10,12 +10,6 @@
       href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
     />
     <style>
-      body {
-        background-color: #efefef;
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-      }
       .card {
         background: #f5f5f5;
         width: 400px;
@@ -25,7 +19,7 @@
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
       }
       .card-header {
-        background-color: #ddd;
+        background-color: #cdcdce;
         padding: 15px 17.5px;
         text-align: center;
         border-bottom: none;
@@ -54,28 +48,30 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="card-header p-3">
-        <h1 class="fw-bold">Color Converter</h1>
-      </div>
-      <div class="card-body p-4">
-        <p class="lead">Enter Color (Hex, RGB, HSL) or Pick a Color:</p>
-        <!-- Input Section -->
-        <div class="input-group">
-          <input type="text" class="form-control" id="color" />
-          <input type="color" class="picker" id="picker" />
+    <div class="bgc center">
+      <div class="card">
+        <div class="card-header p-3">
+          <h1 class="fw-bold">Color Converter</h1>
         </div>
-        <!-- Result Section -->
-        <div class="mt-3">
-          <select id="format" class="form-control">
-            <option value="hex">HEX</option>
-            <option value="rgb">RGB</option>
-            <option value="hsl">HSL</option>
-            <option value="hsv">HSV</option>
-            <option value="name">Name</option>
-          </select>
+        <div class="card-body p-4">
+          <p class="lead">Enter Color (Hex, RGB, HSL) or Pick a Color:</p>
+          <!-- Input Section -->
+          <div class="input-group">
+            <input type="text" class="form-control" id="color" />
+            <input type="color" class="picker" id="picker" />
+          </div>
+          <!-- Result Section -->
+          <div class="mt-3">
+            <select id="format" class="form-control">
+              <option value="hex">HEX</option>
+              <option value="rgb">RGB</option>
+              <option value="hsl">HSL</option>
+              <option value="hsv">HSV</option>
+              <option value="name">Name</option>
+            </select>
+          </div>
+          <div class="mt-3 res" id="result"></div>
         </div>
-        <div class="mt-3 res" id="result"></div>
       </div>
     </div>
     <script src="https://unpkg.com/tinycolor2"></script>

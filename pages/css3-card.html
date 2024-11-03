@@ -6,12 +6,6 @@
     <title>CSS3 Animated Card</title>
     <link rel="stylesheet" href="../public/base.css" />
     <style>
-      body {
-        background-color: #212529;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-      }
       .card-container {
         perspective: 1000px;
         width: 240px;
@@ -107,6 +101,11 @@
         z-index: 4;
       }
       .img {
+        color: #17171f;
+        font-size: 5rem;
+        font-weight: 700;
+        display: grid;
+        place-items: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -132,27 +131,29 @@
     </style>
   </head>
   <body>
-    <div class="card-container">
-      <div class="gl"></div>
-      <div class="card front">
-        <div class="body">
-          <div class="title">ICE</div>
-          <div class="text">
-            Cold and crystalline, serene yet chilling, embodying stillness and
-            preservation in its icy embrace.
+    <div class="bgc dark center">
+      <div class="card-container">
+        <div class="gl"></div>
+        <div class="card front">
+          <div class="body">
+            <div class="title">ICE</div>
+            <div class="text">
+              Cold and crystalline, serene yet chilling, embodying stillness and
+              preservation in its icy embrace.
+            </div>
           </div>
+          <div class="img">ICE</div>
         </div>
-        <div class="img">ICE</div>
-      </div>
-      <div class="card back">
-        <div class="body">
-          <div class="title">FIRE</div>
-          <div class="text">
-            Elemental force, fierce and consuming, symbolizing passion and
-            destruction in its blazing intensity.
+        <div class="card back">
+          <div class="body">
+            <div class="title">FIRE</div>
+            <div class="text">
+              Elemental force, fierce and consuming, symbolizing passion and
+              destruction in its blazing intensity.
+            </div>
           </div>
+          <div class="img">FIRE</div>
         </div>
-        <div class="img">FIRE</div>
       </div>
     </div>
   </body>

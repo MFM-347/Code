@@ -78,5 +78,15 @@
     "title": "Analog Clock",
     "description": "Elegant clock design with animated hands, set against a gradient background, featuring responsive layout and smooth real-time updates.",
     "link": "./pages/analog-clock.html"
+  },
+  {
+    "title": "BaseCSS",
+    "description": "Simple CSS base template with dark mode and responsive typography, ideal for web projects needing minimal styling.",
+    "link": "./pages/base-css.html"
+  },
+  {
+    "title": "Contact Form",
+    "description": "Modern and responsive contact form with email, social media links, and a stylish toast notification for user messages.",
+    "link": "./pages/contact-form.html"
   }
 ]

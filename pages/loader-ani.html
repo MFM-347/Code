@@ -5,23 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Loader-Ani</title>
     <link rel="stylesheet" href="../public/base.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
-    />
     <style>
-      .bgc {
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .ac {
-        background-color: var(--bs-body-bg);
-        color: var(--bs-body-color);
-      }
       .linec {
         display: flex;
         justify-content: center;
@@ -95,13 +79,9 @@
     </style>
   </head>
   <body>
-    <div class="bgc ac" data-bs-theme="dark">
-      <div
-        class="container mt-3 d-flex justify-content-center align-items-center"
-      >
-        <div id="hline" class="linec"></div>
-        <div id="vline" class="linec"></div>
-      </div>
+    <div class="bgc dark center">
+      <div id="hline" class="linec"></div>
+      <div id="vline" class="linec"></div>
     </div>
     <script>
       let c1 = document.getElementById("hline"),

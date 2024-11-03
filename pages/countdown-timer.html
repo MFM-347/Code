@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="../public/base.css" />
     <style>
       @import url("https://fonts.cdnfonts.com/css/digital-7-mono?styles=24172");
-      body {
-        background-color: var(--bs-body-bg);
-        color: var(--bs-body-color);
-        height: 100vh;
-        display: grid;
-        place-items: center;
-      }
       .container {
         background: linear-gradient(#4eaefc, #15eaff) no-repeat;
         border-radius: 1rem;
@@ -60,42 +53,44 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1 class="display-6 fw-semibold">CountDown Timer</h1>
-      <div class="time" id="timer">00:00:00</div>
-      <div class="inpc">
-        <input
-          type="number"
-          id="hours"
-          class="form-control inp mb-2"
-          placeholder="HRs"
-          min="0"
-        />
-        <input
-          type="number"
-          id="minutes"
-          class="form-control inp mb-2"
-          placeholder="MINs"
-          min="0"
-          max="59"
-        />
-        <input
-          type="number"
-          id="seconds"
-          class="form-control inp mb-2"
-          placeholder="SECs"
-          min="0"
-          max="59"
-        />
-      </div>
-      <div class="row mt-3">
-        <button id="startButton" class="btn btn-primary col-md-5">
-          Start Timer
-        </button>
-        <div class="col-md-2"></div>
-        <button id="resetButton" class="btn btn-danger col-md-5">
-          Reset Timer
-        </button>
+    <div class="bgc center">
+      <div class="container">
+        <h1>CountDown Timer</h1>
+        <div class="time" id="timer">00:00:00</div>
+        <div class="inpc">
+          <input
+            type="number"
+            id="hours"
+            class="form-control inp mb-2"
+            placeholder="HRs"
+            min="0"
+          />
+          <input
+            type="number"
+            id="minutes"
+            class="form-control inp mb-2"
+            placeholder="MINs"
+            min="0"
+            max="59"
+          />
+          <input
+            type="number"
+            id="seconds"
+            class="form-control inp mb-2"
+            placeholder="SECs"
+            min="0"
+            max="59"
+          />
+        </div>
+        <div class="row mt-3">
+          <button id="startButton" class="btn btn-primary col-md-5">
+            Start Timer
+          </button>
+          <div class="col-md-2"></div>
+          <button id="resetButton" class="btn btn-danger col-md-5">
+            Reset Timer
+          </button>
+        </div>
       </div>
     </div>
     <script>
