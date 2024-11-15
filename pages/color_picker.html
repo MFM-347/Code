@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css"
     />
   </head>
+
   <body>
     <div class="bgc dark center">
       <h1 class="title">Color Picker</h1>
@@ -18,6 +19,12 @@
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
     <script>
+      function updateBorders(color) {
+        document.body.style.borderColor = color
+          ? color.toHexString()
+          : "transparent";
+      }
+
       $(document).ready(function () {
         $("#color").spectrum({
           flat: true,
@@ -105,6 +112,9 @@
               "rgb(76, 17, 48)",
             ],
           ],
+          change: function (color) {
+            updateBorders(color);
+          },
         });
       });
     </script>

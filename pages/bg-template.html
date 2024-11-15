@@ -16,15 +16,19 @@
         background: canvas;
         color: canvasText;
       }
+
       html {
         color-scheme: dark only;
       }
+
       [data-theme="dark"] {
         color-scheme: dark only;
       }
+
       [data-theme="light"] {
         color-scheme: light only;
       }
+
       body::before {
         --size: 45px;
         --line: color-mix(in lch, canvasText, transparent 70%);
@@ -44,6 +48,7 @@
         z-index: -1;
       }
     }
+
     @layer styles {
       .bgc {
         height: 100vh;
@@ -52,5 +57,6 @@
       }
     }
   </style>
+
   <body></body>
 </html>

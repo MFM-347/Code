@@ -10,6 +10,7 @@
         background: linear-gradient(#3328a8, #9156ca) no-repeat;
         background-size: 200%;
       }
+
       .container {
         backdrop-filter: blur(1rem) saturate(180%);
         -webkit-backdrop-filter: blur(0.75rem) saturate(180%);
@@ -22,6 +23,7 @@
         align-items: center;
         flex-direction: column;
       }
+
       .clock {
         background-color: #4a3cef;
         border: 0.25rem solid #3c2cff;
@@ -34,6 +36,7 @@
         align-items: center;
         position: relative;
       }
+
       .clock .hand {
         position: absolute;
         transform-origin: bottom;
@@ -41,21 +44,25 @@
         border-radius: 0.2rem;
         z-index: 200;
       }
+
       .clock .hours {
         width: 0.4rem;
         height: 3.2rem;
         background: #bec8e4;
       }
+
       .clock .minutes {
         width: 0.4rem;
         height: 4.6rem;
         background: #9baacf;
       }
+
       .clock .seconds {
         width: 0.2rem;
         height: 5.2rem;
         background: #7b78ff;
       }
+
       .clock .point {
         position: absolute;
         width: 0.8rem;
@@ -64,6 +71,7 @@
         background: #7b78ff;
         z-index: 300;
       }
+
       .clock .marker-3,
       .clock .marker-6,
       .clock .marker-9,
@@ -72,6 +80,7 @@
         border-radius: 0.1rem;
         background: #7b78ff;
       }
+
       .clock .marker-3 {
         left: 50%;
         top: 0;
@@ -79,6 +88,7 @@
         width: 0.2rem;
         transform: translateX(-50%);
       }
+
       .clock .marker-6 {
         left: 50%;
         bottom: 0;
@@ -86,6 +96,7 @@
         width: 0.2rem;
         transform: translateX(-50%);
       }
+
       .clock .marker-9 {
         top: 50%;
         left: 0;
@@ -93,6 +104,7 @@
         height: 0.2rem;
         transform: translateY(-50%);
       }
+
       .clock .marker-12 {
         top: 50%;
         right: 0;
@@ -102,6 +114,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="bgc center">
       <div class="container">

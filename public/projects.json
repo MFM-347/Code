@@ -20,19 +20,19 @@
     "link": "./pages/color_picker.html"
   },
   {
-    "title": "Footer Component",
+    "title": "Footer",
     "description": "Mobile-friendly Bootstrap footer with customizable links and social media icons, improving website navigation and user experience.",
-    "link": "./pages/footer-component.html"
+    "link": "./pages/footer.html"
   },
   {
-    "title": "CSS3 CheckBox",
+    "title": "CheckBox",
     "description": "CSS3 animated glowing checkbox with SVG icon, featuring smooth transitions, keyframe animations, and modern design for interactive UI.",
-    "link": "./pages/css3-checkbox.html"
+    "link": "./pages/checkbox.html"
   },
   {
-    "title": "CSS3 Animated Card",
+    "title": "Animated Card",
     "description": "This is a 3D card flip animation using CSS3. Hover over the card to see the flip effect and the gradient change on the glowing background.",
-    "link": "./pages/css3-card.html"
+    "link": "./pages/card.html"
   },
   {
     "title": "Digital Clock",
@@ -88,5 +88,10 @@
     "title": "Contact Form",
     "description": "Modern and responsive contact form with email, social media links, and a stylish toast notification for user messages.",
     "link": "./pages/contact-form.html"
+  },
+  {
+    "title": "Input",
+    "description": "A modern/stylish input field with a floating label, custom effects, and smooth transitions for a better UI/UX.",
+    "link": "./page/input.html"
   }
 ]
