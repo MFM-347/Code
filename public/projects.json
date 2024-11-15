@@ -32,7 +32,7 @@
   {
     "title": "Animated Card",
     "description": "This is a 3D card flip animation using CSS3. Hover over the card to see the flip effect and the gradient change on the glowing background.",
-    "link": "./pages/card.html"
+    "link": "./pages/animated-card.html"
   },
   {
     "title": "Digital Clock",
@@ -92,6 +92,6 @@
   {
     "title": "Input",
     "description": "A modern/stylish input field with a floating label, custom effects, and smooth transitions for a better UI/UX.",
-    "link": "./page/input.html"
+    "link": "./pages/input.html"
   }
 ]
