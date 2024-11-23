@@ -10,9 +10,9 @@
     "link": "./pages/text-shadows.html"
   },
   {
-    "title": "Loader-Ani",
+    "title": "Loader Component",
     "description": "Enhance user experience with sleek CSS3 loaders and your website's visual appeal with our CSS3 loader animations.",
-    "link": "./pages/loader-ani.html"
+    "link": "./pages/loader-component.html"
   },
   {
     "title": "Color Picker",
@@ -20,14 +20,14 @@
     "link": "./pages/color_picker.html"
   },
   {
-    "title": "Footer",
+    "title": "Footer Component",
     "description": "Mobile-friendly Bootstrap footer with customizable links and social media icons, improving website navigation and user experience.",
-    "link": "./pages/footer.html"
+    "link": "./pages/footer-component.html"
   },
   {
-    "title": "CheckBox",
+    "title": "CheckBox Component",
     "description": "CSS3 animated glowing checkbox with SVG icon, featuring smooth transitions, keyframe animations, and modern design for interactive UI.",
-    "link": "./pages/checkbox.html"
+    "link": "./pages/checkbox-component.html"
   },
   {
     "title": "Animated Card",
@@ -52,7 +52,7 @@
   {
     "title": "Login Form",
     "description": "A simple, responsive login page with a clean design, featuring a username and password form, styled with CSS.",
-    "link": "./pages/login.html"
+    "link": "./pages/login-form.html"
   },
   {
     "title": "Number System Converter",
@@ -90,8 +90,8 @@
     "link": "./pages/contact-form.html"
   },
   {
-    "title": "Input",
-    "description": "A modern/stylish input field with a floating label, custom effects, and smooth transitions for a better UI/UX.",
-    "link": "./pages/input.html"
+    "title": "DarkMode Toggler",
+    "description": "Modern and responsive contact form with email, social media links, and a stylish toast notification for user messages.",
+    "link": "./pages/darkmode-toggler.html"
   }
 ]
