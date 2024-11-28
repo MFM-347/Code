@@ -1,0 +1,6 @@
+{
+  "title": "Stop Watch",
+  "description": "Responsive stopwatch built with Bootstrap. Track time with Start, Stop, and Reset buttons. Clean UI, real-time precision.",
+  "category": "Time",
+  "tags": ["time", "bootstrap", "js", "stopwatch", "mfm3478"]
+}

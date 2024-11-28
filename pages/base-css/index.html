@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url("https://unpkg.com/normalize.css");
+      @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+      :root {
+        --bg: #f0f0f6;
+        --fg: #17171f;
+      }
+
+      .dark {
+        --bg: #212529;
+        --fg: #dee2e6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .bgc {
+        background-color: var(--bg);
+        color: var(--fg);
+        min-height: 100vh;
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h6,
+      .heading,
+      .title {
+        font-family: "Rubik", sans-serif !important;
+      }
+
+      p,
+      span,
+      label,
+      .text,
+      .btn {
+        font-family: "Karla", sans-serif !important;
+      }
+
+      .center {
+        display: grid;
+        place-items: center;
+      }
+
+      .center-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .title {
+        font-size: calc(1.425rem + 2.1vw);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 8px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bgc center-col">
+      <h1 class="title">BaseCSS</h1>
+      <p>CSS Base (reset) for my code</p>
+    </div>
+    <script>
+      const seoJson = "./seo.json";
+    </script>
+    <script src="../../public/seo.js" defer></script>
+  </body>
+</html>

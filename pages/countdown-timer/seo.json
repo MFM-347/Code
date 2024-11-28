@@ -1,0 +1,6 @@
+{
+  "title": "CountDown Timer",
+  "description": "A responsive countdown timer built with Bootstrap, featuring customizable time inputs for hours, minutes, and seconds with a reset function.",
+  "category": "Time",
+  "tags": ["time", "bootstrap", "js", "countdown-timer", "mfm3478"]
+}

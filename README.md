@@ -4,6 +4,6 @@ This repository contains the HTML, CSS, and JavaScript code from various project
 
 ## License
 
-The code in this repository is licensed under the **MIT License**. For more details, view the license [here](https://opensource.org/licenses/MIT).
+The code in this repository is licensed under the **MIT License**
 
 [![License MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
